@@ -1,5 +1,6 @@
 import arcade as arcad
-
+import random
+import math
 
 class MyGame(arcad.Window):
 
@@ -11,8 +12,8 @@ class MyGame(arcad.Window):
        arcad.start_render()
        output = f'Score: {self.score:02d}'
        arcad.draw_text(output, 100, 100, arcad.color.WHITE)
-
-
+   def update(self, delta_time):
+       self.score += 1
 
 
 def main():
