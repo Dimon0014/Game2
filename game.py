@@ -5,8 +5,7 @@ class MyGame(arcad.Window):
        arcad.start_render()
        arcad.draw_text('Hello', 100, 100, arcad.color.WHITE)
 
-       ("""arcade.open_window(600, 600, 'My Game' )
-       arcade.finish_render()""")
+
 
 
 def main():
