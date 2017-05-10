@@ -1,4 +1,7 @@
+import random
+
 import arcade as arcad
+
 
 class MyGame(arcad.Window):
    def on_draw(self):
