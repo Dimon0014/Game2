@@ -9,7 +9,7 @@ class MyGame(arcad.Window):
 
 
 def main():
-    MyGame(600,600,'My Game')
+    MyGame(600,600,'My Game_game')
     arcad.run()
 
 if __name__ == '__main__':
