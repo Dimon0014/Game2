@@ -6,10 +6,11 @@ class MyGame(arcad.Window):
    def __init__(self, width, height, title):
        super().__init__(width, height, title)
        arcad.set_background_color(arcad.color.AMAZON)
-
+       self.score = 0
    def on_draw(self):
        arcad.start_render()
-       arcad.draw_text('Hello', 100, 100, arcad.color.WHITE)
+       output = f'Score: {self.score:02d}'
+       arcad.draw_text(output, 100, 100, arcad.color.WHITE)
 
 
 
