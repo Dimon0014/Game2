@@ -1,5 +1,3 @@
-import random
-
 import arcade as arcad
 
 
