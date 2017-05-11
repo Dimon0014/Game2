@@ -22,6 +22,10 @@ class MyGame(arcad.Window):
        self.score += 1
        self.all_sprites_list.update()
 
+   def on_mouse_motion(self, x, y, dx, dy):
+       self.player_sprite.center_x = x
+       self.player_sprite.center_y = y
+
 def main():
     MyGame(600,600,'My Game_game')
     arcad.run()
