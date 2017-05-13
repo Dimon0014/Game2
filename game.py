@@ -29,9 +29,15 @@ class MyGame(arcad.Window):
        arcad.draw_text(output, 100, 100, arcad.color.WHITE)
        self.all_sprites_list.draw()
    def update(self, delta_time):
-       self.score += 1
-       self.all_sprites_list.update()
 
+       self.all_sprites_list.update()
+       hit_list = arcad.check_for_collision_with_list(
+           self.player_sprite,
+           self.coin_list
+       )
+       for coin in hit_list:
+           coin.kill()
+           self.score += 1
    def on_mouse_motion(self, x, y, dx, dy):
        self.player_sprite.center_x = x
        self.player_sprite.center_y = y
