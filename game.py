@@ -10,7 +10,7 @@ class MyGame(arcad.Window):
        self.score = 0
 
        self.all_sprites_list = arcad.SpriteList()
-       self.player_sprite = arcad.Sprite('character2.png', 0.7)
+       self.player_sprite = arcad.Sprite('character.png', 0.7)
        self.player_sprite.center_x = 50
        self.player_sprite.center_y = 50
        self.all_sprites_list.append(self.player_sprite)
