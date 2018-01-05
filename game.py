@@ -22,7 +22,7 @@ class MyGame(arcad.Window):
           coin.center_y = random.randrange(600)
           self.all_sprites_list.append(coin) # это все в цикле делается, в том числе
                                              # coin объявляется
-          self.coin_list.append(coin)
+          self.coin_list.append(coin) # добавляется к "self.coin_list = arcad.SpriteList()"
    def on_draw(self):
        arcad.start_render()
        output = f'Score: {self.score:02d}'
